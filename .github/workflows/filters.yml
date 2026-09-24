@@ -9,9 +9,10 @@ on:
         - opened
         - closed
        paths-ignore:
-        README.md
+            README.md
        branches:
         - main
+
 
 jobs:
     hello:

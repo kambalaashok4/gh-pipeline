@@ -3,11 +3,13 @@ on:
     push:
         branches: 
             - main
-            - feature
+            - '!feature'
     pull_request:
        types:
         - opened
         - closed
+       paths-ignore:
+        README.md
        branches:
         - main
 

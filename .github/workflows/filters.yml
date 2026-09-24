@@ -1,0 +1,20 @@
+name: filters in github action
+on:
+    push:
+        branches: 
+            - main
+            - feature
+    pull-request:
+       types:
+        - opened
+        - closed
+       branches:
+        - main
+
+jobs:
+    hello:
+        runs-on: ubuntu-latest
+        steps:
+        - run: echo worksflow ---- ${{ github.event-name }}
+
+
